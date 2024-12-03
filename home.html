@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер паролей</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Менеджер паролей</h1>
+    <form method="POST" action="">
+        <lable for="new_password">Введите новый пароль:</lable>
+        <input type="text" id="new_password" name="new_password" required>
+        ,<button type="submit">Сохранить пароль</button>
+    </form>
+    <h2>Ваши сохраненные пароли:</h2>
+    <form method="POST" action="show_passwords.php">
+        <button type="submit">Показать пароли</button>
+    </form>
+</body>
+</html>
