@@ -27,5 +27,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_passwords'])){
 }
 
 $passwords = file('passwords.txt', FILE_IGNORE_NEW_LINES);
-
+array_shift($passwords) //скорее всего не нужно
 include 'show_passwords.html';
